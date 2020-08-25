@@ -1,9 +1,9 @@
-- name: ipconfig save as local file
+- name: hostname save as local file
   hosts: all 
    
   tasks:
-    - name: run ipconfig save result to local file
+    - name: run hostname save result to local file
       win_package: 
-        path: 'C:\windows\system32\ipconfig.exe'
+        path: 'C:\windows\system32\hostname.exe'
         product_id: 000888
-        arguments: '/all > c:\test\result1.txt'
+        arguments: '> c:\test\result1.txt'
