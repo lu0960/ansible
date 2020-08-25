@@ -1,0 +1,7 @@
+- name: ipconfig save as local file
+  hosts: all 
+ 
+    - name: run ipconfig save result to local file
+      win_package: 
+        path: 'C:\windows\system32\ipconfig.exe'
+        arguments: '>c:\test\result1.txt'
