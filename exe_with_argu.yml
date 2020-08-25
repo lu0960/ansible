@@ -1,9 +1,0 @@
-- name: hostname save as local file
-  hosts: all 
-   
-  tasks:
-    - name: run hostname save result to local file
-      win_package: 
-        path: 'C:\windows\system32\hostname.exe'
-        product_id: 000888
-        arguments: '> c:\test\result1.txt'
