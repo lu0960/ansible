@@ -1,8 +1,0 @@
----
-
-- hosts: all
-  gather_facts: true
-  tasks:
-  win_file:
-    path: c:\test\foo.conf
-    state: touch
