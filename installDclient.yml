@@ -7,8 +7,8 @@
         url: 'https://deepinstinct.sharefile.com/d-scacd132bf574798a'
         dest: 'C:\test\Downloads\2.3.2.5_InstallerManaged_deep.exe'
 
-- name: install diagent
-  win_package:
-    path: 'C:\test\Downloads\2.3.2.5_InstallerManaged_deep.exe'
-    product_Id: 8F276E88-8C75-44AA-A245-7112AE5AF2DA
-    arguments: 'selab.poc.deepinstinctweb.com /tenant 9d009cbe-3d09-44e8-8f8c-866a1f8bd29b /nfs'
+    - name: install diagent
+      win_package:
+        path: 'C:\test\Downloads\2.3.2.5_InstallerManaged_deep.exe'
+        product_Id: 8F276E88-8C75-44AA-A245-7112AE5AF2DA
+        arguments: 'selab.poc.deepinstinctweb.com /tenant 9d009cbe-3d09-44e8-8f8c-866a1f8bd29b /nfs'
