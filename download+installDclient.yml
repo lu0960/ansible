@@ -1,0 +1,14 @@
+  - name: Install DI agent 
+  hosts: all 
+  
+  tasks:
+    - name: Download the DI agent 2.3.2.5
+      win_get_url:
+        url: 'http://192.168.1.2:8080/2.3.2.5/2.3.2.5_InstallerManaged_deep.exe'
+        dest: 'C:\test\Downloads\2.3.2.5_InstallerManaged_deep.exe'
+
+    - name: install diagent
+      win_package:
+        path: 'C:\test\Downloads\2.3.2.5_InstallerManaged_deep.exe'
+        product_Id: 8F276E88-8C75-44AA-A245-7112AE5AF2DA
+        arguments: 'selab.poc.deepinstinctweb.com /tenant 9d009cbe-3d09-44e8-8f8c-866a1f8bd29b /nfs'
