@@ -1,0 +1,13 @@
+- name: Install Putty from an MSI 
+  hosts: all 
+ 
+  tasks:
+    - name: Download the Apache installer
+      win_get_url:
+        url: 'https://the.earth.li/~sgtatham/putty/latest/w32/putty-0.74-installer.msi'
+        dest: 'C:\test\Downloads\putty-0.74-installer.msi'
+
+    - name: Install MSI
+      win_package: 
+        path: 'C:\test\Downloads\putty-0.74-installer.msi'
+        state: present
