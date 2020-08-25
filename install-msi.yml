@@ -2,7 +2,7 @@
   hosts: all 
  
   tasks:
-    - name: Download the Apache installer
+    - name: Download the Putty installer
       win_get_url:
         url: 'https://the.earth.li/~sgtatham/putty/latest/w32/putty-0.74-installer.msi'
         dest: 'C:\test\Downloads\putty-0.74-installer.msi'
