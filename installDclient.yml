@@ -1,9 +1,6 @@
 - name: Install DI agent 
   hosts: all 
- 
-  tasks:
-
-
+   tasks:
     - name: install diagent
       win_package:
         path: '\\192.168.1.2\p1\Share\deep\2.3.2.5\2.3.2.5_InstallerManaged_deep.exe'
