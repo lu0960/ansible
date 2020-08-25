@@ -3,4 +3,6 @@
 - hosts: all
   gather_facts: true
   tasks:
-    - command: 'mkdir c:\test\dir3'
+  win_file:
+    path: c:\test\foo.conf
+    state: touch
