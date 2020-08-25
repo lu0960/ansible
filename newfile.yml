@@ -1,4 +1,0 @@
-- name: Touch a file (creates if not present, updates modification time if present)
-  win_file:
-    path: c:\test\foo.conf
-    state: touch
