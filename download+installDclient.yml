@@ -1,4 +1,4 @@
-  - name: Install DI agent 
+- name: Install DI agent 
   hosts: all 
   
   tasks:
