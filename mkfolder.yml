@@ -2,6 +2,6 @@
 
 - hosts: all
   gather_facts: true
-  warn: false
+  command_warnings: false
   tasks:
     - command: 'mkdir c:\test\dir3'
