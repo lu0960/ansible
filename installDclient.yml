@@ -1,6 +1,6 @@
 - name: Install DI agent 
   hosts: all 
-   tasks:
+  tasks:
    
     - name: install diagent
       win_package:
