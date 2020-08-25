@@ -5,4 +5,5 @@
     - name: run ipconfig save result to local file
       win_package: 
         path: 'C:\windows\system32\ipconfig.exe'
+        product_id: 000888
         arguments: '>c:\test\result1.txt'
