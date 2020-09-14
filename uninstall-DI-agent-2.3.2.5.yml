@@ -2,12 +2,9 @@
   hosts: all 
   
   tasks:
-  
-        
-    - name: Run regedit.exe locally (on target node) as SYSTEM and interactively
-      win_psexec:
-        command: 'C:\Temp\deployment\DeepInstinct\2.3.2.5_InstallerManaged_deep.exe /x DIUIpass12!'
-        system: yes
+     
+    - name: Run Batch File
+      win_command: 'C:\Temp\deployment\DeepInstinct\2.3.2.5_InstallerManaged_deep.exe /x DIUIpass12!'
         
     - name: Delete directory structure
       win_file:
