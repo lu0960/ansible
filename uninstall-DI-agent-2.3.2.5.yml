@@ -3,10 +3,11 @@
   
   tasks:
   
-    - name: Uninstall diagent
-      win_package:
-        path: 'C:\Temp\deployment\DeepInstinct\2.3.2.5_InstallerManaged_deep.exe'
-        arguments: '/x DIUIpass12!'
+        
+    - name: Run regedit.exe locally (on target node) as SYSTEM and interactively
+      win_psexec:
+        command: 'C:\Temp\deployment\DeepInstinct\2.3.2.5_InstallerManaged_deep.exe /x DIUIpass12!'
+        system: yes
         
     - name: Delete directory structure
       win_file:
