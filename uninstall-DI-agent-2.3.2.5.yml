@@ -6,9 +6,7 @@
     - name: Uninstall diagent
       win_package:
         path: 'C:\Temp\deployment\DeepInstinct\2.3.2.5_InstallerManaged_deep.exe'
-        product_Id: 8F276E88-8C75-44AA-A245-7112AE5AF2DA
         arguments: '/x DIUIpass12!'
-        state: absent
         
     - name: Delete directory structure
       win_file:
